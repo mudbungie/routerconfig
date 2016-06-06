@@ -1,0 +1,4 @@
+You'll want to run netrules.sh in /etc/network/if-pre-up.d, and ports.sh 
+(filled with your own personal port forwards) as a post-up command,
+because you can't run those iptables rules without the interfaces being online.
+
