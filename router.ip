@@ -7,8 +7,11 @@
 # eth0 is the uplink
 # eth1 is main interanl net
 # eth2 is backup dhcp management
--A POSTROUTING -o eth0 -j MASQUERADE
 
+# Masquerade for the internet
+-A POSTROUTING -o eth0 -j MASQUERADE
+#-A POSTROUTING -o eth1 -j MASQUERADE
+#-A POSTROUTING -o eth2 -j MASQUERADE
 COMMIT
 
 *filter
